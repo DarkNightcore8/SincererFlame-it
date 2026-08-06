@@ -1,1 +1,0 @@
-<b>Bold text</b> <i>Italic text</i> <a href="">Link</a>
