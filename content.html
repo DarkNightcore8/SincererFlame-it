@@ -33,7 +33,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -81,7 +80,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
 .main-nav {
   background: #eef4fb;
   border-bottom: 1px solid #b8cbe0;
@@ -112,8 +110,7 @@ a:hover {
 
 .profile-pic {
   height: 180px;
-  background: #c7d8ec url(https://files.catbox.moe/vgkskp.gif)
-    center / cover;
+  background: #c7d8ec url(https://files.catbox.moe/vgkskp.gif) center / cover;
   border: 1px solid #b8cbe0;
   margin-bottom: 15px;
 }
@@ -154,7 +151,6 @@ a:hover {
   color: #5f7fa3;
 }
 
-
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
@@ -164,14 +160,11 @@ a:hover {
     width: 100%;
   }
 
-
   .main-nav {
     flex-direction: column;
     gap: 8px;
     align-items: center;
-
   }
-
 
   .topbar {
     flex-direction: column;
@@ -179,15 +172,13 @@ a:hover {
     gap: 5px;
   }
 
-
   .links {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
   }
 }
-
-  </style>
+</style>
 </head>
 
 <body>
@@ -196,13 +187,12 @@ a:hover {
     <header class="topbar">
       <span class="site-name"><img src="https://files.catbox.moe/psomq7.png" height="15" alt="x"> Sincererflame71's website content</span>
       <nav class="links">
-          <a href="https://www.instagram.com/sincererflame71/">Instagram</a> ·
+        <a href="https://www.instagram.com/sincererflame71/">Instagram</a> ·
         <a href="https://twitter.com/SincererFlame71">Twitter</a> ·
         <a href="https://www.twitch.tv/sincererflame71">Twitch</a> ·
         <a href="https://www.youtube.com/@SincererFlame71">YouTube</a>
       </nav>
     </header>
-
 
     <nav class="main-nav">
       <a href="index.html">home</a>
@@ -211,48 +201,82 @@ a:hover {
       <a href="https://sincererflame71.atabook.org/">guestbook</a>
     </nav>
 
-
-
     <div class="main">
 
-
+      <!-- ================= COLONNA SINISTRA (SIDEBAR) ================= -->
       <aside class="sidebar">
         <div class="profile-pic"></div>
 
         <div class="box">
           <div class="side-title">What's New!</div>
-         <a href="https://github.com/DarkNightcore8/SincererFlame-it/"><b>For all the updates please visit the github page</b></a> <br></br> First Update (1.0): I’ve just started rebuilding the site, so this box will be used for updates, small fixes, and new pages as I add them.
-         <br></br>
-         Website style renewed and revisited.
+          <a href="https://github.com/DarkNightcore8/SincererFlame-it/"><b>For all the updates please visit the github page</b></a>
+          <br><br>
+          First Update (1.0): I’ve just started rebuilding the site, so this box will be used for updates, small fixes, and new pages as I add them.
+          <br><br>
+          Website style renewed and revisited.
         </div>
 
         <div class="box">
           <div class="side-title">Playing now</div>
-         <!-- Sezione del box "Playing now" -->
-<div class="box">
-    <div class="box-title">Playing now</div>
+          <div style="text-align: center;">
+              <!-- Titolo della canzone -->
+              <div id="songTitle" style="font-size: 14px; font-weight: bold; margin-bottom: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                  Titolo
+              </div>
 
-    <div class="box-content" style="text-align: center;">
-        <!-- Titolo della canzone -->
-        <div id="songTitle" style="font-size: 14px; font-weight: bold; margin-bottom: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-            Titolo
+              <!-- Elemento audio -->
+              <audio id="audioElement"></audio>
+
+              <!-- Tasti di controllo -->
+              <div style="display: flex; justify-content: center; gap: 6px; flex-wrap: wrap;">
+                  <button id="prevBtn" style="padding: 6px 10px; cursor: pointer;">&lt;&lt;</button>
+                  <button id="playPauseBtn" style="padding: 6px 10px; cursor: pointer;">Play</button>
+                  <button id="stopBtn" style="padding: 6px 10px; cursor: pointer;">Stop</button>
+                  <button id="nextBtn" style="padding: 6px 10px; cursor: pointer;">&gt;&gt;</button>
+              </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ================= COLONNA DESTRA (CONTENT) ================= -->
+      <div class="content">
+
+        <div class="box">
+          <div class="content-title">UNDERGROUND AUDIO ARCHIVE</div>
+          A non profit preservation project for rare, deleted, and hard-to-find lo-fi audio.
         </div>
 
-        <!-- Elemento audio -->
-        <audio id="audioElement"></audio>
-
-        <!-- Tasti di controllo (Precedente, Play/Pausa, Stop, Successivo) -->
-        <div style="display: flex; justify-content: center; gap: 6px; flex-wrap: wrap;">
-            <button id="prevBtn" style="padding: 6px 10px; cursor: pointer;">&lt;&lt;</button>
-            <button id="playPauseBtn" style="padding: 6px 10px; cursor: pointer;">Play</button>
-            <button id="stopBtn" style="padding: 6px 10px; cursor: pointer;">Stop</button>
-            <button id="nextBtn" style="padding: 6px 10px; cursor: pointer;">&gt;&gt;</button>
+        <div class="box">
+          <div class="content-title">Blod Besvimplse ⸸ Geleit ins Totenreich (1999-2000)</div>
+          <ul>
+            <li>Status: Removed from official streaming. Restored manually.</li>
+            <li>[Listen on YouTube Music <a href="https://music.youtube.com/playlist?list=PLc6Aw-IkJmxg&si=iIUDRWqBzMT2laiI" target="_blank">(Playlist Link)</a>]</li>
+            <li>[Download Full Album .7z <a href="https://mega.nz/file/ZnIQQRwb#tIOFTpH1eG3LghmXWrmsrDfM5ZLqfZXhGL4AeLNiZNc" target="_blank">(External Cloud Link)</a>]</li>
+          </ul>
         </div>
-    </div>
-</div>
+        
+         <div class="box">
+          <div class="content-title">Heroin Makes Happy ⸸ It's Not Too Late... (2000)</div>
+          <ul>
+            <li>Status: Archive backup from temporary web release.</li>
+            <li>[Listen on YouTube Music <a href="https://youtube.com/playlist?list=PLKG2wQRbfDgQ&si=Q77CQ0PkgTGAPXKs" target="_blank">(Playlist Link to-do)</a>]</li>
+            <li>[Download Full Album .7z <a href="https://mega.nz/file/5yJF1DpB#OkWIFamvpcDJXt0Eshfh6vHarMSzcZOPphnsjacVQAQ" target="_blank">(External Cloud Link)</a>]</li>
+          </ul>
+        </div>
+
+
+
+      </div> <!-- Fine content -->
+
+    </div> <!-- Fine main -->
+
+    <footer class="footer">
+      <p><-- Do not remove the credits if you use this free layout! thank you. --></p>
+    </footer>
+
+</div> <!-- Fine container -->
 
 <script>
-    // Lista delle tue canzoni (puoi aggiungerne quante ne vuoi)
     const playlist = [
         { title: "Haiku.s3m - Tommi Uimonen", src: "https://file.garden/al93BzBGcHVETbiT/Tommi%20Uimonen%20-%20haiku.s3m.mp3" },
         { title: "Title Theme - Jokabi & GameChops", src: "https://file.garden/al93BzBGcHVETbiT/Title%20Theme.mp3" },
@@ -275,16 +299,13 @@ a:hover {
     const nextBtn = document.getElementById('nextBtn');
     const songTitle = document.getElementById('songTitle');
 
-    // Funzione per caricare una traccia
     function loadTrack(index) {
         audioElement.src = playlist[index].src;
         songTitle.textContent = playlist[index].title;
     }
 
-    // Carica la prima traccia all'avvio
     loadTrack(currentTrackIndex);
 
-    // Play / Pausa
     playPauseBtn.addEventListener('click', () => {
         if (audioElement.paused) {
             audioElement.play();
@@ -295,14 +316,12 @@ a:hover {
         }
     });
 
-    // Stop
     stopBtn.addEventListener('click', () => {
         audioElement.pause();
         audioElement.currentTime = 0;
         playPauseBtn.textContent = "Play";
     });
 
-    // Canzone Successiva
     nextBtn.addEventListener('click', () => {
         currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
         loadTrack(currentTrackIndex);
@@ -310,53 +329,12 @@ a:hover {
         playPauseBtn.textContent = "Pausa";
     });
 
-    // Canzone Precedente
     prevBtn.addEventListener('click', () => {
         currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
         loadTrack(currentTrackIndex);
         audioElement.play();
         playPauseBtn.textContent = "Pausa";
     });
-
-    // Passa automaticamente alla canzone successiva quando finisce
-    audioElement.addEventListener('ended', () => {
-        currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
-        loadTrack(currentTrackIndex);
-        audioElement.play();
-    });
 </script>
-        </div>
-      </aside>
-
-
-
-
-      <div class="content">
-
-
-        <div class="box">
-          <div class="content-title">Work in progress</div>
-          Work in progress.
-        </div>
-
-        <div class="box">
-          <div class="content-title">Work in progress</div>
-         Work in progress.
-        </div>
-
-
-      </div>
-
-
-    </div>
-
-
-<!-- Do not remove the credits if you use this free layout! thank you. -->
-
-<footer class="footer">
-      Layout made by <a href="https://itinerae.org" target="_blank">Itinerae.</a>
-    </footer>
-
-  </div>
 </body>
 </html>
